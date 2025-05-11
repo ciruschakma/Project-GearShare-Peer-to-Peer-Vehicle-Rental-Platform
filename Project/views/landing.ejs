@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to GearShare</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background: linear-gradient(to bottom, #7be2ff, #044aba);
+            color: #fff;
+            text-align: center;
+            padding: 0;
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+        }
+        .btn-container {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .btn-choice {
+            padding: 15px 30px;
+            font-size: 1.2rem;
+            border-radius: 10px;
+            text-transform: uppercase;
+            font-weight: bold;
+            transition: transform 0.2s ease, background-color 0.2s ease;
+        }
+        .btn-choice:hover {
+            transform: scale(1.05);
+        }
+        .btn-provider {
+            background-color: #1565c0;
+            border: none;
+            color: white;
+        }
+        .btn-provider:hover {
+            background-color: #0d47a1;
+        }
+        .btn-seeker {
+            background-color: #2e7d32;
+            border: none;
+            color: white;
+        }
+        .btn-seeker:hover {
+            background-color: #1b5e20;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>Welcome to GearShare</h1>
+        <p class="lead">Your trusted car-sharing platform</p>
+        <div class="btn-container">
+            <a href="/users/providers/signup" class="btn btn-choice btn-provider">Sign Up as Provider</a>
+            <a href="/users/seekers/signup" class="btn btn-choice btn-seeker">Sign Up as Seeker</a>
+            <a href="/users/providers/login" class="btn btn-choice btn-provider">Login as Provider</a>
+            <a href="/users/seekers/login" class="btn btn-choice btn-seeker">Login as Seeker</a>
+        </div>
+    </div>
+</body>
+</html>
